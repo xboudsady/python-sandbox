@@ -1,11 +1,10 @@
-def calculate_square_area(side: int = 1) -> int: 
-    return side * side
+area = 0 # global variable
 
-area = calculate_square_area()
+def calculate_square_area(side: int = 1) -> int: 
+    area = side * side
+    print(f"The area is {area}")
+    return area
+
+calculate_square_area(4)
 
 print(f"The area of the square is {area}")
-
-def build_ferrari(color = "red"):
-    print(f"Built a {color} Ferrari")
-
-build_ferrari("blue")
